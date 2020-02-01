@@ -1,0 +1,143 @@
+*{
+	box-sizing: border-box;
+
+}
+body {
+	font-family: 'Amatic SC', cursive;
+	background-color:#ddb03e;
+	margin: 0 auto;
+
+}
+
+.container {
+	width: 600px;
+	height: 1000px;
+	background-color:#ddb03e;
+	margin: 0 auto;
+}
+
+.menu{
+	padding-top: 7px;
+	width: 400px;
+	margin:10px auto;
+	height: 100px;
+	border: 1p solid black;
+	text-align: center;
+	font-size: 60px;
+	color:#997950;
+	background-color:#DFBC5E ;
+	border-radius: 50px;
+	 -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+	
+
+}
+
+.menu:hover {
+	 -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+
+}
+
+
+
+.glaz{
+	margin-top:-100px;
+	margin-bottom: 50px;
+	background-image: url(https://i.gifer.com/AyWv.gif);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	opacity: 0.75;
+	height: 370px;
+	overflow: hidden;
+	-moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+}
+
+.glaz:hover{
+	-webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+
+}
+
+
+
+
+#preloader {
+  background-color:#ddb03e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999999;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #9370DB;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #BA55D3;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #FF00FF;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
